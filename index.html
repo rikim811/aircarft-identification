@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"defer></script>
+    <script src="script.js"defer></script>
+    <meta charset="UTF-8">
+    <title>Aircraft Identification</title>
+</head>
+<body>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="manufacture-tab" data-bs-toggle="tab" data-bs-target="#manufacture-tab-pane" type="button" role="tab" aria-controls="manufacture-tab-pane" aria-selected="true">Manufacture</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="aircraft-type-tab" data-bs-toggle="tab" data-bs-target="#aircraft-type-tab-pane" type="button" role="tab" aria-controls="aircraft-type-tab-pane" aria-selected="false">Type of Aircraft</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">More in depth</button>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="manufacture-tab-pane" role="tabpanel" aria-labelledby="manufacture-tab" tabindex="0">
+        <button class="btn btn-danger" type="button" id="airbus">Airbus</button>
+        <button class="btn btn-primary" type="button" id="boeing">Boeing</button>
+        <button class="btn btn-warning" type="button" id="idk">I don't know</button>
+    </div>
+    <div class="tab-pane fade" id="aircraft-type-tab-pane" role="tabpanel" aria-labelledby="aircraft-type-tab-pane" tabindex="0">
+        <button class="btn btn-danger" type="button" id="four-engine">4 Engine Aircraft</button>
+        <button class="btn btn-primary" type="button" id="two-engine">2 Engine Aircraft</button>
+        <button class="btn btn-warning" type="button" id="two-engine-narrow-body">2 Engine Narrow Body Aircraft</button>
+    </div>
+    <div class="tab-pane fade" id="four-engine-airbus-tab-pane" role="tabpanel" aria-labelledby="four-engine-airbus-tab" tabindex="0">
+        <button class="btn btn-danger" type="button" id="single-decker">Single Decker</button>
+        <button class="btn btn-warning" type="button" id="double-decker">Double Decker</button>
+    </div>
+    <div class="tab-pane fade" id="two-engine-airbus-tab-pane" role="tabpanel" aria-labelledby="two-engine-airbus-tab-pane" tabindex="0">
+        <button class="btn btn-danger" type="button" id="four-">Single Decker</button>
+        <button class="btn btn-warning" type="button" id="two-engine-">Double Decker</button>
+    </div>
+    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="b747Modal" tabindex="-1" role="dialog" aria-labelledby="B747" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">B747</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
