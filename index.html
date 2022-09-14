@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"defer></script>
     <script src="script.js"defer></script>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Aircraft Identification</title>
 </head>
@@ -16,7 +17,7 @@
         <button class="nav-link" id="aircraft-type-tab" data-bs-toggle="tab" data-bs-target="#aircraft-type-tab-pane" type="button" role="tab" aria-controls="aircraft-type-tab-pane" aria-selected="false">Type of Aircraft</button>
     </li>
     <li class="nav-item" role="presentation">
-        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">More in depth</button>
+        <button class="nav-link" id="more-tab" data-bs-toggle="tab" data-bs-target="#more-tab-pane" type="button" role="tab" aria-controls="more-tab-pane" aria-selected="false">More in depth</button>
 </ul>
 <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="manufacture-tab-pane" role="tabpanel" aria-labelledby="manufacture-tab" tabindex="0">
@@ -29,7 +30,7 @@
         <button class="btn btn-primary" type="button" id="two-engine">2 Engine Aircraft</button>
         <button class="btn btn-warning" type="button" id="two-engine-narrow-body">2 Engine Narrow Body Aircraft</button>
     </div>
-    <div class="tab-pane fade" id="four-engine-airbus-tab-pane" role="tabpanel" aria-labelledby="four-engine-airbus-tab" tabindex="0">
+    <div class="tab-pane fade" id="four-engine-airbus-tab-pane" role="tabpanel" tabindex="0">
         <button class="btn btn-danger" type="button" id="single-decker">Single Decker</button>
         <button class="btn btn-warning" type="button" id="double-decker">Double Decker</button>
     </div>
@@ -51,8 +52,9 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                ...
+            <div class="aircraft-modal">
+                <img class="aircraft-modal" src="https://www.lufthansa.com/content/dam/lh/images/local_images/discover-lufthansa/fleet/B747-400_1144x490.jpg.transform/lh-dcep-transform-width-1440/img.jpg">
+                The Boeing 747 is a large, wide-body (two-aisle) airliner with four wing-mounted engines. Its wings have a high sweep angle of 37.5° for a fast, efficient cruise speed of Mach 0.84 to 0.88, depending on the variant. The sweep also reduces the wingspan, allowing the 747 to use existing hangars.
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
